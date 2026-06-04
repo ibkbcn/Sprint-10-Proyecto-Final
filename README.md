@@ -1,7 +1,7 @@
 # Fresh Products Sales in Mercamadrid: Origin Analysis and Sustainability Impact
 
 ## CONTEXT
-Mercamadrid is one of Spain's main food supply hubs and a key reference point for understanding the structure of the fresh produce market. Its activity reflects the interactions between domestic production, imports, and internal demand, making it a barometer of the balance between food self-sufficiency and external dependency.
+Mercamadrid is the largest fresh food distribution hub in Spain and the largest of its kind in Europe, serving as a key reference point for understanding the structure of the fresh produce market. Its activity reflects the interactions between domestic production, imports, and internal demand, making it a barometer of the balance between food self-sufficiency and external dependency.
 
 In this context, analyzing the origin of traded products is particularly relevant given the growing internationalization of food trade and ongoing debates around the sustainability of supply chains.
 
