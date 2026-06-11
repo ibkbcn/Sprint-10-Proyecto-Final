@@ -43,7 +43,7 @@ Across the top selling vegetables, an imported kilo travels on average 11 times 
 
 *Same product, two journeys: average distance per kilo for the domestic (green) and imported (navy) version of each top vegetable sold with both origins, sorted by the gap.*
 
-**The bottom line:** year-round availability has become the norm. The deseasonalization of consumption consolidates import dependency: fresh produce is expected on the shelf every month, whatever the season, and the kilometers travel with it.
+**The bottom line:** Year-round availability has become the norm. The breakdown of consumption seasonality reinforces import dependency: fresh produce must be on shelves every month, whatever the season, driving up the food miles involved.
 
 ## How it is built
 
