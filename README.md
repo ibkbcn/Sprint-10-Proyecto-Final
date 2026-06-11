@@ -58,6 +58,6 @@ volpre2024 (open data) -> Python: cleaning + categorization -> GeoPy geocoding +
 
 ## Data
 
-Everything builds on [Mercamadrid: volumen y precio]([https://data.europa.eu/data/datasets/https-datos-madrid-es-egob-catalogo-300357-0-mercamadrid-volumen-precio?locale=en]), the open dataset published by Madrid City Council (raw file `volpre2024.csv`): volume, prices and origin per product, January to September 2024. The processed dataset ships with the repo ([`data/mercamadrid.xlsx`](data/mercamadrid.xlsx), 27,571 rows) together with its [data dictionary](data/README.md).
+Everything builds on [Mercamadrid: volumen y precio](https://data.europa.eu/data/datasets/https-datos-madrid-es-egob-catalogo-300357-0-mercamadrid-volumen-precio?locale=en), the open dataset published by Madrid City Council (raw file `volpre2024.csv`): volume, prices and origin per product, January to September 2024. The processed dataset ships with the repo ([`data/mercamadrid.xlsx`](data/mercamadrid.xlsx), 27,571 rows) together with its [data dictionary](data/README.md).
 
-*Personal data analytics project. Author: Ivan Betriu Kahlenberg.*
+
