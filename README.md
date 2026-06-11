@@ -9,17 +9,11 @@ Mercamadrid is **the largest fresh food hub in Europe**: if you buy fresh produc
 
 ![Key stats](figures/01_key_stats.png)
 
-## The questions
-
-1. **Import weight**: what is the real share of imports in the fresh produce supply?
-2. **Seasonality**: how much does the time of year change where products come from?
-3. **Logistics and distance**: how far does food travel to reach Madrid, and how different is that journey for domestic and imported products?
-
 ## What the data says
 
 ### 1. Three quarters of the volume is Spanish
 
-Mercamadrid buys from 101 origins all over the world, but most of the volume never crosses a border.
+On paper, the market's 101 origins split almost evenly: 50 Spanish provinces, 51 foreign countries. The volume tells another story.
 
 ![Purchase distribution map](figures/03_dashboard_map.png)
 
@@ -57,34 +51,16 @@ Across the top selling vegetables, an imported kilo travels on average 11 times 
 volpre2024 (open data) -> Python: cleaning + categorization -> GeoPy geocoding + Haversine distances -> Excel -> Power BI
 ```
 
-- [`notebooks/01_cleaning_transformation.ipynb`](notebooks/01_cleaning_transformation.ipynb): cleans 27,571 monthly records with pandas (type fixes, duplicated headers, price normalization) and builds the analysis categories: product groups, general typology (vegetables, meat, fish) and the domestic vs imported flag.
+- [`notebooks/01_cleaning_transformation.ipynb`](notebooks/01_cleaning_transformation.ipynb): cleans the 27,571 monthly records with pandas and builds the analysis categories: product groups, general typology (vegetables, meat, fish) and the domestic vs imported flag.
 - [`notebooks/02_geocoding_distances.ipynb`](notebooks/02_geocoding_distances.ipynb): geocodes the 101 origins with GeoPy (Nominatim), builds geometries with GeoPandas and computes each origin's distance to Madrid with the Haversine formula.
 - [`powerbi/Mercamadrid.pbix`](powerbi/Mercamadrid.pbix): the interactive dashboard built on the processed dataset, seven pages covering the general overview, meat vs vegetables vs fish, volume analysis and four product deep dives. Open it in Power BI Desktop.
 - [`reports/article.pdf`](reports/article.pdf): four page write-up of the study (Spanish). [`reports/slides.pptx`](reports/slides.pptx): final presentation (Spanish).
 
-## Repository structure
-
-```
-├── data/
-│   ├── mercamadrid.xlsx      # processed dataset, 27,571 rows x 16 columns
-│   └── README.md             # data dictionary & source
-├── notebooks/
-│   ├── 01_cleaning_transformation.ipynb
-│   └── 02_geocoding_distances.ipynb
-├── powerbi/
-│   └── Mercamadrid.pbix      # 7 page interactive dashboard
-├── figures/                  # charts used in this README
-├── reports/
-│   ├── article.pdf           # written study (Spanish)
-│   └── slides.pptx           # presentation (Spanish)
-├── requirements.txt
-└── README.md
-```
-
 ## Data
 
-| | |
-|---|---|
+Everything builds on [Mercamadrid: volumen y precio](https://data.europa.eu/data/datasets/https-datosmadrid-es-egob-catalogo-300357-0-mercamadrid-volumen-precio), the open dataset published by Madrid City Council (raw file `volpre2024.csv`): volume, prices and origin per product, January to September 2024. The processed dataset ships with the repo ([`data/mercamadrid.xlsx`](data/mercamadrid.xlsx), 27,571 rows) together with its [data dictionary](data/README.md).
+
+---|
 | **Source** | [Mercamadrid: volumen y precio, Madrid City Council open data portal](https://data.europa.eu/data/datasets/https-datosmadrid-es-egob-catalogo-300357-0-mercamadrid-volumen-precio) (raw file `volpre2024.csv`) |
 | **Scope** | Volume (kg), prices (EUR/kg) and geographic origin of every product traded, January to September 2024 |
 | **Processed dataset** | [`data/mercamadrid.xlsx`](data/mercamadrid.xlsx), the output of notebook 01 used by the dashboard |
