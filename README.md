@@ -47,10 +47,6 @@ Across the top selling vegetables, an imported kilo travels on average 11 times 
 
 ## How it is built
 
-```
-volpre2024 (open data) -> Python: cleaning + categorization -> GeoPy geocoding + Haversine distances -> Excel -> Power BI
-```
-
 - [`notebooks/01_cleaning_transformation.ipynb`](notebooks/01_cleaning_transformation.ipynb): cleans the 27,571 monthly records with pandas and builds the analysis categories: product groups, general typology (vegetables, meat, fish) and the domestic vs imported flag.
 - [`notebooks/02_geocoding_distances.ipynb`](notebooks/02_geocoding_distances.ipynb): geocodes the 101 origins with GeoPy (Nominatim), builds geometries with GeoPandas and computes each origin's distance to Madrid with the Haversine formula.
 - [`powerbi/Mercamadrid.pbix`](powerbi/Mercamadrid.pbix): the interactive dashboard built on the processed dataset, seven pages covering the general overview, meat vs vegetables vs fish, volume analysis and four product deep dives. Open it in Power BI Desktop.
