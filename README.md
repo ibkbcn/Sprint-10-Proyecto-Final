@@ -13,7 +13,7 @@ Mercamadrid is **the largest fresh food hub in Europe**: if you buy fresh produc
 
 ### 1. Three quarters of the volume is Spanish
 
-On paper, the market's 101 origins split almost evenly: 50 Spanish provinces, 51 foreign countries. The volume tells another story.
+Out of the 101 identified origins, 50 correspond to Spanish provinces and 51 to foreign countries.
 
 ![Purchase distribution map](figures/03_dashboard_map.png)
 
